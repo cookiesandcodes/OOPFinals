@@ -1,0 +1,20 @@
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\bin\Debug\STUDENTREG.exe.config
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\bin\Debug\STUDENTREG.exe
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\bin\Debug\STUDENTREG.pdb
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.csprojResolveAssemblyReference.cache
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.Form1.resources
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.Form2.resources
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.Properties.Resources.resources
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.csproj.GenerateResource.Cache
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.exe
+c:\users\bigduck\documents\visual studio 2015\Projects\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.pdb
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\bin\Debug\STUDENTREG.exe.config
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.exe
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.pdb
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\bin\Debug\STUDENTREG.exe
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\bin\Debug\STUDENTREG.pdb
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.csprojResolveAssemblyReference.cache
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.Form1.resources
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.Form2.resources
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.Properties.Resources.resources
+C:\Users\Jack\Downloads\JILL\STUDENTREG\STUDENTREG\obj\Debug\STUDENTREG.csproj.GenerateResource.Cache
