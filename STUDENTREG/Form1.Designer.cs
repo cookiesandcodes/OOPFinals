@@ -59,7 +59,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(10, 320);
+            this.btnadd.Location = new System.Drawing.Point(11, 330);
             this.btnadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(51, 28);
@@ -70,7 +70,7 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(65, 320);
+            this.btnedit.Location = new System.Drawing.Point(66, 330);
             this.btnedit.Margin = new System.Windows.Forms.Padding(2);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(51, 28);
@@ -81,7 +81,7 @@
             // 
             // btnsave
             // 
-            this.btnsave.Location = new System.Drawing.Point(119, 320);
+            this.btnsave.Location = new System.Drawing.Point(120, 330);
             this.btnsave.Margin = new System.Windows.Forms.Padding(2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(51, 28);
@@ -92,7 +92,7 @@
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(174, 320);
+            this.btndelete.Location = new System.Drawing.Point(175, 330);
             this.btndelete.Margin = new System.Windows.Forms.Padding(2);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(61, 28);
@@ -109,15 +109,16 @@
             this.dgv_stud.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_stud.Name = "dgv_stud";
             this.dgv_stud.RowTemplate.Height = 28;
-            this.dgv_stud.Size = new System.Drawing.Size(313, 307);
+            this.dgv_stud.Size = new System.Drawing.Size(543, 307);
             this.dgv_stud.TabIndex = 4;
+            this.dgv_stud.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_stud_CellContentClick);
             // 
             // btntop
             // 
             this.btntop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btntop.BackgroundImage")));
             this.btntop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btntop.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btntop.Location = new System.Drawing.Point(281, 320);
+            this.btntop.Location = new System.Drawing.Point(562, 330);
             this.btntop.Margin = new System.Windows.Forms.Padding(2);
             this.btntop.Name = "btntop";
             this.btntop.Size = new System.Drawing.Size(51, 28);
@@ -128,7 +129,7 @@
             // 
             this.btnprevious.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnprevious.BackgroundImage")));
             this.btnprevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnprevious.Location = new System.Drawing.Point(336, 320);
+            this.btnprevious.Location = new System.Drawing.Point(617, 330);
             this.btnprevious.Margin = new System.Windows.Forms.Padding(2);
             this.btnprevious.Name = "btnprevious";
             this.btnprevious.Size = new System.Drawing.Size(51, 28);
@@ -139,7 +140,7 @@
             // 
             this.btnnext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnnext.BackgroundImage")));
             this.btnnext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnnext.Location = new System.Drawing.Point(391, 320);
+            this.btnnext.Location = new System.Drawing.Point(672, 330);
             this.btnnext.Margin = new System.Windows.Forms.Padding(2);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(51, 28);
@@ -150,7 +151,7 @@
             // 
             this.btnlast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnlast.BackgroundImage")));
             this.btnlast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnlast.Location = new System.Drawing.Point(445, 320);
+            this.btnlast.Location = new System.Drawing.Point(726, 330);
             this.btnlast.Margin = new System.Windows.Forms.Padding(2);
             this.btnlast.Name = "btnlast";
             this.btnlast.Size = new System.Drawing.Size(51, 28);
@@ -301,7 +302,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 355);
+            this.ClientSize = new System.Drawing.Size(785, 374);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtboxpath);
             this.Controls.Add(this.txtboxcourse);

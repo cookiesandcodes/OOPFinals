@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 
 namespace STUDENTREG
@@ -41,6 +43,7 @@ namespace STUDENTREG
                 pictureBox1.Image = new Bitmap(open.FileName);
                 txtboxpath.Text = open.FileName;
             }
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -54,6 +57,7 @@ namespace STUDENTREG
         public void populateDGV()
         {
             string selectQuery = "SELECT * FROM system";
+            // `ID`,`Last Name`,`First Name`,`Middle Name`,`Course`
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter(selectQuery, connection);
             adapter.Fill(table);
@@ -84,6 +88,8 @@ namespace STUDENTREG
             {
                 openConnection();
                 command = new MySqlCommand(query, connection);
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@image", a);
                 if (command.ExecuteNonQuery() == 1)
                 {
                     MessageBox.Show("Request Successful");
@@ -104,38 +110,71 @@ namespace STUDENTREG
                 closeConnection();
             }
         }
-
+        byte[] a;
         private void btnadd_Click(object sender, EventArgs e)
         {
-            string insertQuery = "INSERT INTO system(fname,lname,mname,course) VALUES('" + txtboxfirst.Text + "','" + txtboxlast.Text + "','" + txtboxmid.Text + "','"+ txtboxcourse.Text + "')";
+
+            if (pictureBox1.Image != null)
+            {
+                MemoryStream ms = new MemoryStream();
+                pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
+                a = ms.GetBuffer();
+                ms.Close();
+                
+            }
+            
+            string insertQuery = "INSERT INTO system(`First Name`,`Last Name`,`Middle Name`,`course`,`image`) VALUES('"
+                + txtboxfirst.Text + "','"
+                + txtboxlast.Text + "','"
+                + txtboxmid.Text + "','"
+                + txtboxcourse.Text + "',@image)";
             executeMyQuery(insertQuery);
             populateDGV();
         }
+
+
         private void btnedit_Click(object sender, EventArgs e)
         {
             txtboxID.Text = dgv_stud.CurrentRow.Cells[0].Value.ToString();
             txtboxfirst.Text = dgv_stud.CurrentRow.Cells[1].Value.ToString();
             txtboxlast.Text = dgv_stud.CurrentRow.Cells[2].Value.ToString();
             txtboxmid.Text = dgv_stud.CurrentRow.Cells[3].Value.ToString();
+           /* byte[] imbyt = dgv_stud.T
+            MemoryStream xx = new MemoryStream(imbyt);
+            pictureBox1.Image = Image.FromStream(xx);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; */
         }
         private void btnsave_Click(object sender, EventArgs e)
         {
-            string updateQuery = "UPDATE system SET fname='" + txtboxfirst.Text +
-                "',lname='" + txtboxlast.Text +
-                "',mname='" + txtboxmid.Text +
-                "',course='" + txtboxcourse.Text+
-                "'WHERE id ='"+ int.Parse(txtboxID.Text) + "'";
-
-           
-
+            if (pictureBox1.Image != null)
+            {
+                MemoryStream ms = new MemoryStream();
+                pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
+                byte[] a = ms.GetBuffer();
+                ms.Close();
+    
+            }
+            string updateQuery = "UPDATE system SET `First Name`='" + txtboxfirst.Text +
+                "',`Last Name`='" + txtboxlast.Text +
+                "',`Middle Name`='" + txtboxmid.Text +
+                "',`course`='" + txtboxcourse.Text +
+                "',`image`= @image "+
+                "WHERE id ='" + int.Parse(txtboxID.Text) + "'";
             executeMyQuery(updateQuery);
             populateDGV();
         }
+
+
         private void btndelete_Click(object sender, EventArgs e)
         {
             string deleteQuery = "DELETE FROM system WHERE id = " + int.Parse(txtboxID.Text);
             executeMyQuery(deleteQuery);
             populateDGV();
+        }
+
+        private void dgv_stud_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
