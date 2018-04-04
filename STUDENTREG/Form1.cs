@@ -90,6 +90,16 @@ namespace STUDENTREG
                 command = new MySqlCommand(query, connection);
                 command.Parameters.Clear();
                 command.Parameters.AddWithValue("@image", a);
+                if (sw == true)
+                {
+                    MySqlDataReader DataRead = command.ExecuteReader();
+                    DataRead.Read();
+                    byte[] imgb = ((byte[])DataRead[0]);
+                    MemoryStream ms = new MemoryStream(imgb);
+                    pictureBox1.Image = Image.FromStream(ms);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    
+                }
                 if (command.ExecuteNonQuery() == 1)
                 {
                     MessageBox.Show("Request Successful");
@@ -132,34 +142,42 @@ namespace STUDENTREG
             populateDGV();
         }
 
-
+        bool sw=false;
         private void btnedit_Click(object sender, EventArgs e)
         {
+          sw = true;
             txtboxID.Text = dgv_stud.CurrentRow.Cells[0].Value.ToString();
             txtboxfirst.Text = dgv_stud.CurrentRow.Cells[1].Value.ToString();
             txtboxlast.Text = dgv_stud.CurrentRow.Cells[2].Value.ToString();
             txtboxmid.Text = dgv_stud.CurrentRow.Cells[3].Value.ToString();
-           /* byte[] imbyt = dgv_stud.T
-            MemoryStream xx = new MemoryStream(imbyt);
-            pictureBox1.Image = Image.FromStream(xx);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; */
+
+            string editQuery="select image from system where id='" + txtboxID.Text + "'";
+            executeMyQuery(editQuery);
+
+          sw = false;
         }
+
         private void btnsave_Click(object sender, EventArgs e)
         {
+       
             if (pictureBox1.Image != null)
             {
-                MemoryStream ms = new MemoryStream();
-                pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
-                byte[] a = ms.GetBuffer();
-                ms.Close();
-    
+                MemoryStream bs = new MemoryStream();
+                pictureBox1.Image.Save(bs, pictureBox1.Image.RawFormat);
+                a = bs.GetBuffer();
+                bs.Close();
             }
+
+
+
             string updateQuery = "UPDATE system SET `First Name`='" + txtboxfirst.Text +
                 "',`Last Name`='" + txtboxlast.Text +
                 "',`Middle Name`='" + txtboxmid.Text +
                 "',`course`='" + txtboxcourse.Text +
-                "',`image`= @image "+
-                "WHERE id ='" + int.Parse(txtboxID.Text) + "'";
+                "',`image`= @image"+
+                " WHERE id ='"+int.Parse(txtboxID.Text)+"'";
+
+
             executeMyQuery(updateQuery);
             populateDGV();
         }

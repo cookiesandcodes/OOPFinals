@@ -59,7 +59,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(11, 330);
+            this.btnadd.Location = new System.Drawing.Point(10, 364);
             this.btnadd.Margin = new System.Windows.Forms.Padding(2);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(51, 28);
@@ -70,7 +70,7 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(66, 330);
+            this.btnedit.Location = new System.Drawing.Point(65, 364);
             this.btnedit.Margin = new System.Windows.Forms.Padding(2);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(51, 28);
@@ -81,7 +81,7 @@
             // 
             // btnsave
             // 
-            this.btnsave.Location = new System.Drawing.Point(120, 330);
+            this.btnsave.Location = new System.Drawing.Point(119, 364);
             this.btnsave.Margin = new System.Windows.Forms.Padding(2);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(51, 28);
@@ -92,7 +92,7 @@
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(175, 330);
+            this.btndelete.Location = new System.Drawing.Point(174, 364);
             this.btndelete.Margin = new System.Windows.Forms.Padding(2);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(61, 28);
@@ -109,7 +109,7 @@
             this.dgv_stud.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_stud.Name = "dgv_stud";
             this.dgv_stud.RowTemplate.Height = 28;
-            this.dgv_stud.Size = new System.Drawing.Size(543, 307);
+            this.dgv_stud.Size = new System.Drawing.Size(543, 344);
             this.dgv_stud.TabIndex = 4;
             this.dgv_stud.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_stud_CellContentClick);
             // 
@@ -118,7 +118,7 @@
             this.btntop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btntop.BackgroundImage")));
             this.btntop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btntop.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btntop.Location = new System.Drawing.Point(562, 330);
+            this.btntop.Location = new System.Drawing.Point(559, 364);
             this.btntop.Margin = new System.Windows.Forms.Padding(2);
             this.btntop.Name = "btntop";
             this.btntop.Size = new System.Drawing.Size(51, 28);
@@ -129,7 +129,7 @@
             // 
             this.btnprevious.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnprevious.BackgroundImage")));
             this.btnprevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnprevious.Location = new System.Drawing.Point(617, 330);
+            this.btnprevious.Location = new System.Drawing.Point(614, 364);
             this.btnprevious.Margin = new System.Windows.Forms.Padding(2);
             this.btnprevious.Name = "btnprevious";
             this.btnprevious.Size = new System.Drawing.Size(51, 28);
@@ -140,7 +140,7 @@
             // 
             this.btnnext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnnext.BackgroundImage")));
             this.btnnext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnnext.Location = new System.Drawing.Point(672, 330);
+            this.btnnext.Location = new System.Drawing.Point(669, 364);
             this.btnnext.Margin = new System.Windows.Forms.Padding(2);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(51, 28);
@@ -151,7 +151,7 @@
             // 
             this.btnlast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnlast.BackgroundImage")));
             this.btnlast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnlast.Location = new System.Drawing.Point(726, 330);
+            this.btnlast.Location = new System.Drawing.Point(723, 364);
             this.btnlast.Margin = new System.Windows.Forms.Padding(2);
             this.btnlast.Name = "btnlast";
             this.btnlast.Size = new System.Drawing.Size(51, 28);
@@ -160,7 +160,7 @@
             // 
             // txtboxID
             // 
-            this.txtboxID.Location = new System.Drawing.Point(99, 162);
+            this.txtboxID.Location = new System.Drawing.Point(97, 196);
             this.txtboxID.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxID.Name = "txtboxID";
             this.txtboxID.Size = new System.Drawing.Size(123, 20);
@@ -168,7 +168,7 @@
             // 
             // txtboxlast
             // 
-            this.txtboxlast.Location = new System.Drawing.Point(99, 192);
+            this.txtboxlast.Location = new System.Drawing.Point(97, 226);
             this.txtboxlast.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxlast.Name = "txtboxlast";
             this.txtboxlast.Size = new System.Drawing.Size(123, 20);
@@ -176,7 +176,7 @@
             // 
             // txtboxfirst
             // 
-            this.txtboxfirst.Location = new System.Drawing.Point(99, 220);
+            this.txtboxfirst.Location = new System.Drawing.Point(97, 254);
             this.txtboxfirst.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxfirst.Name = "txtboxfirst";
             this.txtboxfirst.Size = new System.Drawing.Size(123, 20);
@@ -184,7 +184,7 @@
             // 
             // txtboxmid
             // 
-            this.txtboxmid.Location = new System.Drawing.Point(99, 248);
+            this.txtboxmid.Location = new System.Drawing.Point(97, 282);
             this.txtboxmid.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxmid.Name = "txtboxmid";
             this.txtboxmid.Size = new System.Drawing.Size(123, 20);
@@ -193,7 +193,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 164);
+            this.label1.Location = new System.Drawing.Point(10, 198);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 13);
@@ -203,7 +203,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 194);
+            this.label2.Location = new System.Drawing.Point(10, 228);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 13);
@@ -213,7 +213,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 221);
+            this.label3.Location = new System.Drawing.Point(10, 255);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 13);
@@ -223,7 +223,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 250);
+            this.label4.Location = new System.Drawing.Point(10, 284);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 13);
@@ -233,7 +233,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 275);
+            this.label5.Location = new System.Drawing.Point(10, 309);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
@@ -242,7 +242,7 @@
             // 
             // btncourse
             // 
-            this.btncourse.Location = new System.Drawing.Point(99, 297);
+            this.btncourse.Location = new System.Drawing.Point(97, 331);
             this.btncourse.Margin = new System.Windows.Forms.Padding(2);
             this.btncourse.Name = "btncourse";
             this.btncourse.Size = new System.Drawing.Size(122, 19);
@@ -253,7 +253,7 @@
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(9, 78);
+            this.btnBrowse.Location = new System.Drawing.Point(6, 101);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(63, 28);
@@ -268,13 +268,13 @@
             this.pictureBox1.Location = new System.Drawing.Point(76, 6);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 120);
+            this.pictureBox1.Size = new System.Drawing.Size(144, 145);
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
             // txtboxcourse
             // 
-            this.txtboxcourse.Location = new System.Drawing.Point(99, 272);
+            this.txtboxcourse.Location = new System.Drawing.Point(97, 306);
             this.txtboxcourse.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxcourse.Name = "txtboxcourse";
             this.txtboxcourse.Size = new System.Drawing.Size(123, 20);
@@ -282,7 +282,7 @@
             // 
             // txtboxpath
             // 
-            this.txtboxpath.Location = new System.Drawing.Point(7, 130);
+            this.txtboxpath.Location = new System.Drawing.Point(6, 169);
             this.txtboxpath.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxpath.Name = "txtboxpath";
             this.txtboxpath.Size = new System.Drawing.Size(214, 20);
@@ -291,7 +291,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 113);
+            this.label6.Location = new System.Drawing.Point(8, 138);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 13);
@@ -302,7 +302,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 374);
+            this.ClientSize = new System.Drawing.Size(785, 419);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtboxpath);
             this.Controls.Add(this.txtboxcourse);
